@@ -8,12 +8,12 @@ Calendar::Persian - Interface to Persian Calendar.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
 our $DEBUG   = 0;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Carp;
 use Readonly;
@@ -65,21 +65,55 @@ sub new
     $self->{mm}   = $mm;
     $self->{dd}   = $dd;
 
-    return $self;    
+    return $self;
 }
 
 =head1 SYNOPSIS
 
-The  Persian  calendar  is  solar, with the particularity that the year is defined by two successive, 
-apparent passages of the Sun through the vernal (spring) equinox. It is based on precise astronomical 
-observations,  and  moreover  uses a sophisticated intercalation system, which makes it more accurate 
-than  its  younger  European counterpart, the Gregorian calendar. It is currently used in Iran as the 
-official  calendar  of the country.  The starting point of the current Iranian calendar is the vernal 
+The  Persian  calendar  is  solar, with the particularity that the year is defined by two successive,
+apparent passages of the Sun through the vernal (spring) equinox. It is based on precise astronomical
+observations,  and  moreover  uses a sophisticated intercalation system, which makes it more accurate
+than  its  younger  European counterpart, the Gregorian calendar. It is currently used in Iran as the
+official  calendar  of the country.  The starting point of the current Iranian calendar is the vernal
 equinox occurred on Friday March 22 of the year A.D. 622.
 
-    use Calendar::Persian;
+=head2 Persian Calendar for the month of Farvadin year 1390.
 
-    my $persian = Calendar::Persian->new();
+            Farvardin [1390]
+
+    Sun  Mon  Tue  Wed  Thu  Fri  Sat
+           1    2    3    4    5    6
+      7    8    9   10   11   12   13
+     14   15   16   17   18   19   20
+     21   22   23   24   25   26   27
+     28   29   30   31
+
+=head2 Months Names
+
+    Order     Modern Persian Name
+    1         Farvardin
+    2         Ordibehesht
+    3         Xordad
+    4         Tir
+    5         Amordad
+    6         Sahrivar
+    7         Mehr
+    8         Aban
+    9         Azar
+    10        Dey
+    11        Bahman
+    12        Esfand
+
+=head2 Weekdays
+
+    Number   Gregorian    Persian
+    0        Sunday       Yekshanbeh
+    1        Monday       Doshanbeh
+    2        Tuesday      Seshhanbeh
+    3        Wednesday    Chaharshanbeh
+    4        Thursday     Panjshanbeh
+    5        Friday       Jomeh
+    6        Saturday     Shanbeh
 
 =head1 METHODS
 
@@ -100,7 +134,7 @@ sub to_gregorian
     my $yyyy = shift;
     my $mm   = shift;
     my $dd   = shift;
-    
+
     $yyyy = $self->{yyyy} unless defined $yyyy;
     $mm   = $self->{mm}   unless defined $mm;
     $dd   = $self->{dd}   unless defined $dd;
@@ -108,12 +142,12 @@ sub to_gregorian
     _validate_date($yyyy, $mm, $dd);
 
     print {*STDOUT} "Persian: YYYY [$yyyy] MM [$mm] DD [$dd]\n" if $DEBUG;
-    
+
     my $julian = _to_julian($yyyy, $mm, $dd);
     ($yyyy, $mm, $dd) =  _julian_to_gregorian($julian); 
-    
+
     print {*STDOUT} "Gregorian: YYYY [$yyyy] MM [$mm] DD [$dd]\n" if $DEBUG;
-    
+
     return ($yyyy, $mm, $dd);
 }
 
@@ -138,13 +172,13 @@ sub from_gregorian
     _validate_date($yyyy, $mm, $dd);
 
     print {*STDOUT} "Gregorian: YYYY [$yyyy] MM [$mm] DD [$dd]\n" if $DEBUG;
-    
+
     my $julian = _gregorian_to_julian($yyyy, $mm, $dd) + (floor(0 + 60 * (0 + 60 * 0) + 0.5) / 86400.0);
 
     ($yyyy, $mm, $dd) = _from_julian($julian);
-    
+
     print {*STDOUT} "Persian: YYYY [$yyyy] MM [$mm] DD [$dd]\n" if $DEBUG;
-    
+
     return ($yyyy, $mm, $dd);
 }
 
@@ -164,7 +198,7 @@ sub is_leap
 {
     my $self = shift;
     my $yyyy = shift;
-    
+
     return (((((($yyyy - (($yyyy > 0) ? 474 : 473)) % 2820) + 474) + 38) * 682) % 2816) < 682;
 }
 
@@ -174,7 +208,7 @@ Return Persian date in human readable format.
 
     use strict; use warnings;
     use Calendar::Persian;
-    
+
     my $persian = Calendar::Persian->new(1389, 9, 16);
     print "Persian date is " . $persian->as_string() . "\n";
 
@@ -201,17 +235,17 @@ Get day of the week of the given Persian date, starting with sunday (0).
 sub dow
 {
     my $self = shift;
-    
+
     my $yyyy = shift;
     my $mm   = shift;
     my $dd   = shift;
-    
+
     $yyyy = $self->{yyyy} unless defined $yyyy;
     $mm   = $self->{mm}   unless defined $mm;
     $dd   = $self->{dd}   unless defined $dd;
 
     _validate_date($yyyy, $mm, $dd);
-    
+
     return _julian_dow(_to_julian($yyyy, $mm, $dd));
 }
 
