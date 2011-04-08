@@ -8,12 +8,12 @@ Calendar::Persian - Interface to Persian Calendar.
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
 our $DEBUG   = 0;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Carp;
 use Readonly;
@@ -90,30 +90,36 @@ equinox occurred on Friday March 22 of the year A.D. 622.
 
 =head2 Months Names
 
-    Order     Modern Persian Name
-    1         Farvardin
-    2         Ordibehesht
-    3         Xordad
-    4         Tir
-    5         Amordad
-    6         Sahrivar
-    7         Mehr
-    8         Aban
-    9         Azar
-    10        Dey
-    11        Bahman
-    12        Esfand
+    ----------------------------------
+    | Order  |  Modern Persian Name  |
+    ----------------------------------
+    |  1     |  Farvardin            |
+    |  2     |  Ordibehesht          |
+    |  3     |  Xordad               | 
+    |  4     |  Tir                  |
+    |  5     |  Amordad              |
+    |  6     |  Sahrivar             | 
+    |  7     |  Mehr                 | 
+    |  8     |  Aban                 |
+    |  9     |  Azar                 |
+    | 10     |  Dey                  |
+    | 11     |  Bahman               |
+    | 12     |  Esfand               |  
+    ----------------------------------
 
 =head2 Weekdays
 
-    Number   Gregorian    Persian
-    0        Sunday       Yekshanbeh
-    1        Monday       Doshanbeh
-    2        Tuesday      Seshhanbeh
-    3        Wednesday    Chaharshanbeh
-    4        Thursday     Panjshanbeh
-    5        Friday       Jomeh
-    6        Saturday     Shanbeh
+    -------------------------------------------
+    | Number  |  Gregorian  |  Persian        |
+    -------------------------------------------
+    |    0    |  Sunday     |  Yekshanbeh     |
+    |    1    |  Monday     |  Doshanbeh      |  
+    |    2    |  Tuesday    |  Seshhanbeh     |
+    |    3    |  Wednesday  |  Chaharshanbeh  |
+    |    4    |  Thursday   |  Panjshanbeh    |
+    |    5    |  Friday     |  Jomeh          |
+    |    6    |  Saturday   |  Shanbeh        |
+    -------------------------------------------
 
 =head1 METHODS
 
@@ -276,10 +282,9 @@ Return number of days in the given year and month of Persian calendar.
     use strict; use warnings;
     use Calendar::Persian;
 
-    my $persian = Calendar::Persian->new(1932,12,26);
-    print "Days is Phalguna 1932: [" . $persian->days_in_year_month() . "]\n";
-
-    print "Days is Chaitra 1932: [" . $persian->days_in_year_month(1932,1) . "]\n";
+    my $persian = Calendar::Persian->new(1390, 12, 26);
+    print "Days is Esfand 1390:    [" . $persian->days_in_year_month()       . "]\n";
+    print "Days is Farvardin 1390: [" . $persian->days_in_year_month(1390,1) . "]\n";
 
 =cut
 
@@ -318,11 +323,11 @@ calendar if no argument is passed in.
     use strict; use warnings;
     use Calendar::Persian;
 
-    my $persian = Calendar::Persian->new(1932,1,1);
+    my $persian = Calendar::Persian->new(1390,1,1);
     print $saka->get_persian();
 
-    # Print calendar for year 1932 and month 12.
-    print $persian->get_calendar(1932, 12);
+    # Print calendar for year 1390 and month 1.
+    print $persian->get_calendar(1390, 1);
 
 =cut
 
