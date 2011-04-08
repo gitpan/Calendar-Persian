@@ -8,12 +8,12 @@ Calendar::Persian - Interface to Persian Calendar.
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
 our $DEBUG   = 0;
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use Carp;
 use Readonly;
@@ -324,7 +324,7 @@ calendar if no argument is passed in.
     use Calendar::Persian;
 
     my $persian = Calendar::Persian->new(1390,1,1);
-    print $saka->get_persian();
+    print $persian->get_calendar();
 
     # Print calendar for year 1390 and month 1.
     print $persian->get_calendar(1390, 1);

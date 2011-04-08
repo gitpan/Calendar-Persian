@@ -1,5 +1,9 @@
 Revision history for Calendar-Persian
 
+0.04    Fri Apr 08 18:58:00 2011
+        - Fixed one more typo in the pod for method get_calendar().
+        - Removed boilerplate test.
+
 0.03    Fri Apr 08 16:17:18 2011
         - Updated pod for SYNOPSIS.
         - Fixed pod for method days_in_year_month().
