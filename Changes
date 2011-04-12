@@ -1,5 +1,9 @@
 Revision history for Calendar-Persian
 
+0.05    Tue Apr 12 12:45:11 2011
+        - Fixed the internal method _validate_date().
+        - Added unit test 01-test-case.t
+
 0.04    Fri Apr 08 18:58:00 2011
         - Fixed one more typo in the pod for method get_calendar().
         - Removed boilerplate test.

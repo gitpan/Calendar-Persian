@@ -19,7 +19,7 @@ name: Calendar-Persian
 provides:
   Calendar::Persian:
     file: lib/Calendar/Persian.pm
-    version: 0.04
+    version: 0.05
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.04
+version: 0.05
