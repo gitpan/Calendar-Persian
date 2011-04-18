@@ -1,5 +1,13 @@
 Revision history for Calendar-Persian
 
+0.06    Mon Apr 18 16:30:00 2011
+        - Renamed method days_in_year_month() to days_in_month().
+        - Renamed title "SYNOPSIS" to "DESCRIPTION".
+        - Renamed the title "Persian Calendar for the month of Farvadin year 1390.".
+        - Renamed the title "Month Names" to "MONTHS" and set it head1.
+        - Set the title "WEEKDAYS" as head1.
+        - Minor cosmetics changes.
+
 0.05    Tue Apr 12 12:45:11 2011
         - Fixed the internal method _validate_date().
         - Added unit test 01-test-case.t
