@@ -1,5 +1,8 @@
 Revision history for Calendar-Persian
 
+0.07    Tue Apr 19 15:09:09 2011
+        - More cosmetics changes.
+
 0.06    Mon Apr 18 16:30:00 2011
         - Renamed method days_in_year_month() to days_in_month().
         - Renamed title "SYNOPSIS" to "DESCRIPTION".

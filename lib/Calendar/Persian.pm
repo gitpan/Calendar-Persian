@@ -8,12 +8,12 @@ Calendar::Persian - Interface to Persian Calendar.
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =cut
 
 our $DEBUG   = 0;
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use Carp;
 use Readonly;
@@ -547,9 +547,9 @@ L<http://search.cpan.org/dist/Calendar-Persian/>
 
 Copyright 2011 Mohammad S Anwar.
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
+This  program  is  free software;  you can redistribute it and/or modify it under the terms of
+either:  the  GNU  General Public License as published by the Free Software Foundation; or the
+Artistic License.
 
 See http://dev.perl.org/licenses/ for more information.
 
