@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,14 +14,14 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 d3d72506697cc8b618d860b764fb39fd33f9ea24 Build.PL
-SHA1 458efd1c715a6769fc63334dec3fd5a2981d23a8 Changes
+SHA1 a8ba9e22a9d932246f265f3ad02af46356c36c8c Build.PL
+SHA1 f54ba197e8828e06e63b877a44ee8d16b24a6f67 Changes
 SHA1 152be278ca7f38345b5c9a9f383560d1c0b9bc8b MANIFEST
 SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
-SHA1 79edd5912dd3df6596c6c60b85d5c72c8942fbfa META.yml
-SHA1 f0adc4ab35f518604a23d8a8ca7d2fe403a80eff Makefile.PL
-SHA1 148d1ed89d3afc8eade4a2701cab843ece935570 README
-SHA1 1cb5e13465c044a940e00ae5ef36a90a792b3da9 lib/Calendar/Persian.pm
+SHA1 2c022eca0d8a78ebfbc2c9df45562cf7ab6e1be2 META.yml
+SHA1 5060b2cc071fa56446874d600364e646bdf28013 Makefile.PL
+SHA1 50b2a2cb3ec7da3453c5b3e96a4aa997ac3b6a69 README
+SHA1 5b8d829caaa5eec74b610ed62df326ebe5964185 lib/Calendar/Persian.pm
 SHA1 fe530a004fc7dca4c11d0755f87dc13c7c69a77b t/00-load.t
 SHA1 4f8e238d409ab17e407155e9bafd18a0f31376e0 t/01-test-case.t
 SHA1 2b8ffb7e4f399af95d092743846ac8d438f2c53e t/manifest.t
@@ -29,11 +29,11 @@ SHA1 0765c9ff0cc4319f415bb08d0053b7717a8284a2 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2.0.14 (MingW32)
 
-iQEcBAEBAgAGBQJNrZfiAAoJEPYcXBXhRYOhw5wH/0nmHg6ZWrIy37hGSmXytDpb
-wFsxAXIqscrz/jXHvCwwfXBRWNkF5XE92r6/1LcxvgxVQ5WksaPYSfguBGADSaGu
-ddbooN/N+qoxHZqGJLeCsczBsM3Em/LvGwxZHZ7j2G6olBeDUUn2q1aMGJt/qder
-R/QeJuuRsx10R0VmkCCkn9P0vfhcuGlbMRZCB4nqvDzGieBjHbP31/yvAewSmBIq
-/ITVHQ8++yJ5x4hGEHMWhW4kOnuHd2cxDHAtYRR29Q8BE/LrvZy8eCx6ZgYTnQWj
-TD+w1cg1MzWIFHmCfbus4q1d41QGVgUTGd8oNPfQtgUzYgBM8t7xkO35g4d9lN0=
-=g0sj
+iQEcBAEBAgAGBQJOQVGhAAoJEPYcXBXhRYOhYvUH/iS5l3VsRmw/Z+W/yxtNr8Tq
+8HetKexE6Fz0NbFVAi08jHEABhtj7VkoVm/69LEeX/STYBadlG4oYcTdG+aVpJXL
+HcjJlAIaJv0FO5G83wE1Csl7F0FDZRoYIK99ePEsKhi1h79F2RVPbF9ZdT9bjtFE
+SYsqDn32SY6SAXjisMWWMqFIpnoS+0HJPlMt9EYdsujp/ce1SBkSl0YEOZzNq+Ky
+BQbQ3UMXJcInVZtUNzlKTmLvoJZUBkWLtt/VO1tIo17XPkg1vvlWpfvyCD5NKX6r
+toXLwOGtnEsvp8BJooPQEeSNvbBaDTOASLXRekDxS9pZVn1wIQ6e8wL0iRzhmwI=
+=ICGV
 -----END PGP SIGNATURE-----

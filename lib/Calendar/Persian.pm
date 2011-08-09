@@ -8,12 +8,12 @@ Calendar::Persian - Interface to Persian Calendar.
 
 =head1 VERSION
 
-Version 0.07
+Version 0.08
 
 =cut
 
 our $DEBUG   = 0;
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 use Carp;
 use Readonly;
