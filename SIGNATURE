@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,26 +14,24 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 a8ba9e22a9d932246f265f3ad02af46356c36c8c Build.PL
-SHA1 f54ba197e8828e06e63b877a44ee8d16b24a6f67 Changes
-SHA1 152be278ca7f38345b5c9a9f383560d1c0b9bc8b MANIFEST
-SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
-SHA1 2c022eca0d8a78ebfbc2c9df45562cf7ab6e1be2 META.yml
-SHA1 5060b2cc071fa56446874d600364e646bdf28013 Makefile.PL
-SHA1 50b2a2cb3ec7da3453c5b3e96a4aa997ac3b6a69 README
-SHA1 5b8d829caaa5eec74b610ed62df326ebe5964185 lib/Calendar/Persian.pm
+SHA1 13ce45bc5d88a281ad0e9bdb319d0a5fbecb7457 Changes
+SHA1 eb77d6338ef0aac6ab799c9528c07f7aa2a53f9d MANIFEST
+SHA1 5f29cdcbfacb9c46ac155fff9844aceeb064aef1 MANIFEST.SKIP
+SHA1 a3805210655e71b1172b008b0299490544adb5b4 Makefile.PL
+SHA1 12cb24dfa511edcd38767df54bffb97adee3f73a README
+SHA1 aac208cbd9ce6be9bf7457ac33c223aebe898c78 lib/Calendar/Persian.pm
 SHA1 fe530a004fc7dca4c11d0755f87dc13c7c69a77b t/00-load.t
-SHA1 4f8e238d409ab17e407155e9bafd18a0f31376e0 t/01-test-case.t
+SHA1 e860706c8780ea29e979e3106f0648f3d376cfec t/01-unit-test.t
 SHA1 2b8ffb7e4f399af95d092743846ac8d438f2c53e t/manifest.t
 SHA1 0765c9ff0cc4319f415bb08d0053b7717a8284a2 t/pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v2.0.14 (MingW32)
+Version: GnuPG v1
 
-iQEcBAEBAgAGBQJOQVGhAAoJEPYcXBXhRYOhYvUH/iS5l3VsRmw/Z+W/yxtNr8Tq
-8HetKexE6Fz0NbFVAi08jHEABhtj7VkoVm/69LEeX/STYBadlG4oYcTdG+aVpJXL
-HcjJlAIaJv0FO5G83wE1Csl7F0FDZRoYIK99ePEsKhi1h79F2RVPbF9ZdT9bjtFE
-SYsqDn32SY6SAXjisMWWMqFIpnoS+0HJPlMt9EYdsujp/ce1SBkSl0YEOZzNq+Ky
-BQbQ3UMXJcInVZtUNzlKTmLvoJZUBkWLtt/VO1tIo17XPkg1vvlWpfvyCD5NKX6r
-toXLwOGtnEsvp8BJooPQEeSNvbBaDTOASLXRekDxS9pZVn1wIQ6e8wL0iRzhmwI=
-=ICGV
+iQEcBAEBAgAGBQJUE1bZAAoJENoXJXWo7C/p3R4IAI5IH7mrIrr7Lnc3PElW5sc4
+dP5hToPAO/a+rgE5px1jOF8uzLagDkonPX9IfE6l/3xLj81npl9XoqWOgiez2YDB
+ruCtIzuVGxGoNRcuz3IL8QJ/Xjca39wFn4Ox33gPjGvlaEtekR2dl4O5TSUJbR9Y
+5pmqE5xNr4C3kXoTXY5Qwdj95yjr1fFr8TmjRalXs0yWhTd0mLkeApftG2VVF5tb
+OX3TmhyN2cta0kwpvsyw3uEHpzS9en3fvinLUpLpVBnue4AqTzokKTktK1UG0wSp
+dcBDJysDOQ4fGss+bqRAmmPmnHTdPRpbKPlP/ib8Cj2hIO8FYAIOqsERjE/wWd8=
+=z7Sp
 -----END PGP SIGNATURE-----
